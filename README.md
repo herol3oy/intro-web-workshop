@@ -50,3 +50,39 @@ A void element cannot have any child nodes:
 
 ## Let's Start Coding HTML
 Now I'm going to tell you a story about a student whose got his classmate's notebook by mistake and must return it to him until next morning. I'm going to use many different HTML tags to tell this story. You can find the final code here in this repository at `index.html`. OK, let's start it.
+
+## CSS: HTML's best friend 
+
+### Rule
+```css
+body {
+  background-color: whitesmoke;
+}
+```
+
+### Selectors
+We can style our HTML by different CSS selectors. We are mostly in favour of `class selectors`. We also have other options as following:
+- **Class selectors** (`.button {}`)
+- **Universal selectors** (`* {}`)
+- **Type selector** (`p {}`)
+- **Pseudo-classes** (`.content:first-child {}`)
+- **Pseudo-element** (`li::marker { color: red; }`, `::first-letter`)
+
+### CSS Box Model
+The Box Model defines how elements are sized and spaced:
+
+- **Content**: text, images
+- **Padding**: space inside the border
+- **Border**: outline around the element
+- **Margin**: space between elements
+
+### Cascade
+An algorithm for solving conflicts where multiple CSS rules apply to an HTML element
+
+## Specificity
+one of the distinct stages of the cascade
+
+### IDs & `!important`
+- **IDs** are very much specific and should be used rarely in CSS because they will override class selectors.
+- The `!important` rule forces a style.
+
