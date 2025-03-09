@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  background-color: whitesmoke;
+  font-family: "Work Sans", sans-serif;
+  color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.recipe-card {
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 200ms ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+}
+
+.recipe-image {
+  width: 100%;
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+.recipe-title {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.recipe-stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  color: crimson;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stat-label {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+}
+
+.recipe-description {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.view-button {
+  display: block;
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 20px 0 10px 0;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.view-button:hover {
+  background-color: lightcoral;
+}
